@@ -77,3 +77,17 @@ Kubernetes is a container orchestration system that automates deployment, scalin
 ### Google Clound & Google Kubernetes Engine
 
 Google’s solution for cloud computing. GKE is a managed, production ready environment for running containerized applications.
+
+# Ordering Microservice architecture
+## Architecture
+Architecture is made with use of Clean Architecture
+- Port & Adapters
+- Domain Layer is isolated, in the middle of the system and has not any dependencies.
+- Adapters have dependencies to Domain Layers
+
+![Ordering system architecure](./docs/images/architecture-ordering-system.png "Ordering system architecture")
+## Dependency graph
+Implemented as per architecture. Only container module has access to all modules.
+- Business layer (order-application-service / order-domain-core) has no dependency
+
+![Ordering system dependencies](./docs/images/dependency-graph-ordering-system.png "Ordering system dependency graph")

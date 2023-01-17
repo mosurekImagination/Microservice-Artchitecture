@@ -1,0 +1,1 @@
+mvn com.github.ferstl:depgraph-maven-plugin:aggregate -DcreateImage=true -Dscope=compile "-Dincludes=net.mosur.ordering*:*"
