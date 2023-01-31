@@ -10,7 +10,7 @@ Advantages of microservices:
 - better fault isolation
 - enabled to use different technology and languages for different service
 
-Disadvantages:
+Disadvantages: 
 
 - need to use microservice patterns and orchestration tools for common problems
 
@@ -91,3 +91,4 @@ Implemented as per architecture. Only container module has access to all modules
 - Business layer (order-application-service / order-domain-core) has no dependency
 
 ![Ordering system dependencies](./docs/images/dependency-graph-ordering-system.png "Ordering system dependency graph")
+     
