@@ -23,6 +23,7 @@
 
     <properties>
         <maven-complier-plugin.version>3.9.0</maven-complier-plugin.version>
+        <mockito.version>4.3.1</mockito.version>
     </properties>
 
     <dependencyManagement>
@@ -56,6 +57,12 @@
                 <groupId>net.mosur.ordering</groupId>
                 <artifactId>common-domain</artifactId>
                 <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>${mockito.version}</version>
+                <scope>test</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>

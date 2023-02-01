@@ -4,8 +4,6 @@ import net.mosur.ordering.order.service.domain.valueobject.Money;
 import net.mosur.ordering.order.service.domain.valueobject.OrderId;
 import net.mosur.ordering.order.service.domain.valueobject.OrderItemId;
 
-import java.util.UUID;
-
 public class OrderItem extends BaseEntity<OrderItemId>{
     private OrderId orderId;
     private final Product product;
