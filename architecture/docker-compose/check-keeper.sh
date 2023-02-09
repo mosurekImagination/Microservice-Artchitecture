@@ -1,0 +1,1 @@
+echo ruok | nc localhost 5111
