@@ -65,6 +65,11 @@
             </dependency>
             <dependency>
                 <groupId>net.mosur.ordering</groupId>
+                <artifactId>common-application</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>net.mosur.ordering</groupId>
                 <artifactId>kafka-producer</artifactId>
                 <version>${project.version}</version>
             </dependency>
