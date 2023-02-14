@@ -1,10 +1,11 @@
 package net.mosur.ordering.order.service.domain.event;
 
 import net.mosur.ordering.order.service.domain.entity.Order;
+import net.mosur.ordering.domain.event.DomainEvent;
 
 import java.time.ZonedDateTime;
 
-abstract class OrderEvent implements DomainEvent<Order>{
+abstract class OrderEvent implements DomainEvent<Order> {
 
     private final Order order;
     private final ZonedDateTime createdAt;

@@ -2,9 +2,9 @@ package net.mosur.ordering.order.service.domain;
 
 import net.mosur.ordering.order.service.domain.entity.Order;
 import net.mosur.ordering.order.service.domain.entity.Restaurant;
+import net.mosur.ordering.order.service.domain.event.OrderPaidEvent;
 import net.mosur.ordering.order.service.domain.event.OrderCancelledEvent;
 import net.mosur.ordering.order.service.domain.event.OrderCreatedEvent;
-import net.mosur.ordering.order.service.domain.event.OrderPaidEvent;
 
 import java.util.List;
 

@@ -1,5 +1,7 @@
 package net.mosur.ordering.order.service.domain.entity;
 
+import net.mosur.ordering.domain.entity.AggregateRoot;
+import net.mosur.ordering.domain.valueobject.*;
 import net.mosur.ordering.order.service.domain.exception.OrderDomainException;
 import net.mosur.ordering.order.service.domain.valueobject.*;
 
@@ -15,6 +17,9 @@ public class Order extends AggregateRoot<OrderId> {
     private TrackingId trackingId;
     private OrderStatus orderStatus;
     private List<String> failureMessages;
+
+    public static final String FAILURE_MESSAGE_DELIMITER = ",";
+
 
     public void initializeOrder(){
         setId(new OrderId(UUID.randomUUID()));

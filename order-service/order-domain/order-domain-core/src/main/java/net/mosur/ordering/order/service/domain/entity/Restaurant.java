@@ -1,6 +1,7 @@
 package net.mosur.ordering.order.service.domain.entity;
 
-import net.mosur.ordering.order.service.domain.valueobject.RestaurantId;
+import net.mosur.ordering.domain.entity.AggregateRoot;
+import net.mosur.ordering.domain.valueobject.RestaurantId;
 
 import java.util.List;
 

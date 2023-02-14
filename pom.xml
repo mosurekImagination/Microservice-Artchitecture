@@ -17,10 +17,11 @@
 
     <packaging>pom</packaging>
     <modules>
+        <module>customer-service</module>
         <module>order-service</module>
         <module>common</module>
-        <module>architecture</module>
-        <module>architecture/kafka</module>
+        <module>infrastructure</module>
+        <module>infrastructure/kafka</module>
     </modules>
 
     <properties>

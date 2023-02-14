@@ -1,10 +1,11 @@
 package net.mosur.ordering.order.service.domain.entity;
 
-import net.mosur.ordering.order.service.domain.valueobject.Money;
-import net.mosur.ordering.order.service.domain.valueobject.OrderId;
+import net.mosur.ordering.domain.entity.BaseEntity;
+import net.mosur.ordering.domain.valueobject.Money;
 import net.mosur.ordering.order.service.domain.valueobject.OrderItemId;
+import net.mosur.ordering.domain.valueobject.OrderId;
 
-public class OrderItem extends BaseEntity<OrderItemId>{
+public class OrderItem extends BaseEntity<OrderItemId> {
     private OrderId orderId;
     private final Product product;
     private final int quantity;

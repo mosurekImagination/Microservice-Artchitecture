@@ -1,7 +1,8 @@
 package net.mosur.ordering.order.service.domain.entity;
 
-import net.mosur.ordering.order.service.domain.valueobject.Money;
-import net.mosur.ordering.order.service.domain.valueobject.ProductId;
+import net.mosur.ordering.domain.entity.BaseEntity;
+import net.mosur.ordering.domain.valueobject.Money;
+import net.mosur.ordering.domain.valueobject.ProductId;
 
 public class Product extends BaseEntity<ProductId> {
     private String name;

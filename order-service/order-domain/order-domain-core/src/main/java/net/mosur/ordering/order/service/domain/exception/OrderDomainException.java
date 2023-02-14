@@ -1,5 +1,7 @@
 package net.mosur.ordering.order.service.domain.exception;
 
+import net.mosur.ordering.domain.exception.DomainException;
+
 public class OrderDomainException extends DomainException {
     public OrderDomainException(String message) {
         super(message);
