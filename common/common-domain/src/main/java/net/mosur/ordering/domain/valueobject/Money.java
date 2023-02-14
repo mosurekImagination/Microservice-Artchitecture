@@ -1,11 +1,11 @@
 package net.mosur.ordering.domain.valueobject;
-
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.Objects;
 
 public class Money {
     private final BigDecimal amount;
+
     public static final Money ZERO = new Money(BigDecimal.ZERO);
 
     public Money(BigDecimal amount) {
@@ -24,7 +24,7 @@ public class Money {
         return new Money(setScale(this.amount.add(money.getAmount())));
     }
 
-    public Money substract(Money money) {
+    public Money subtract(Money money) {
         return new Money(setScale(this.amount.subtract(money.getAmount())));
     }
 
