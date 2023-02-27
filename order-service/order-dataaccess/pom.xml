@@ -2,22 +2,27 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>net.mosur.ordering</groupId>
         <artifactId>order-service</artifactId>
+        <groupId>net.mosur.food.ordering.system</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+    <modelVersion>4.0.0</modelVersion>
 
     <artifactId>order-dataaccess</artifactId>
 
     <properties>
+
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>net.mosur.ordering</groupId>
+            <groupId>net.mosur.food.ordering.system</groupId>
             <artifactId>order-application-service</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.mosur.food.ordering.system</groupId>
+            <artifactId>common-dataaccess</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -28,4 +33,5 @@
             <artifactId>postgresql</artifactId>
         </dependency>
     </dependencies>
+
 </project>

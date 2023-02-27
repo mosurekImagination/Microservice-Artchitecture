@@ -3,7 +3,7 @@ server:
 
 logging:
   level:
-    net.mosur.ordering: DEBUG
+    net.mosur.food.ordering.system: DEBUG
 
 restaurant-service:
   restaurant-approval-request-topic-name: restaurant-approval-request

@@ -1,8 +1,5 @@
 version: '3.7'
 
 networks:
-  food-ordering:
+  food-ordering-system:
     driver: bridge
-    ipam:
-      config:
-        - subnet: ${DOCKER_NETWORK_ADDRESS}

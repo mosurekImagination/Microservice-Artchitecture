@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: order-service
-          image: com.food.ordering.system/order.service:1.0-SNAPSHOT
+          image: net.mosur.food.ordering.system/order.service:1.0-SNAPSHOT
           env:
             - name: SPRING_DATASOURCE_URL
               value: "jdbc:postgresql://postgres-service:5432/postgres?currentSchema=order&binaryTransfer=true&reWriteBatchedInserts=true&stringtype=unspecified"
@@ -69,7 +69,7 @@ spec:
     spec:
       containers:
         - name: payment-service
-          image: com.food.ordering.system/payment.service:1.0-SNAPSHOT
+          image: net.mosur.food.ordering.system/payment.service:1.0-SNAPSHOT
           env:
             - name: SPRING_DATASOURCE_URL
               value: "jdbc:postgresql://postgres-service:5432/postgres?currentSchema=payment&binaryTransfer=true&reWriteBatchedInserts=true&stringtype=unspecified"
@@ -121,7 +121,7 @@ spec:
     spec:
       containers:
         - name: restaurant-service
-          image: com.food.ordering.system/restaurant.service:1.0-SNAPSHOT
+          image: net.mosur.food.ordering.system/restaurant.service:1.0-SNAPSHOT
           env:
             - name: SPRING_DATASOURCE_URL
               value: "jdbc:postgresql://postgres-service:5432/postgres?currentSchema=restaurant&binaryTransfer=true&reWriteBatchedInserts=true&stringtype=unspecified"
@@ -172,7 +172,7 @@ spec:
     spec:
       containers:
         - name: customer-service
-          image: com.food.ordering.system/customer.service:1.0-SNAPSHOT
+          image: net.mosur.food.ordering.system/customer.service:1.0-SNAPSHOT
           env:
             - name: SPRING_DATASOURCE_URL
               value: "jdbc:postgresql://postgres-service:5432/postgres?currentSchema=customer&binaryTransfer=true&reWriteBatchedInserts=true&stringtype=unspecified"

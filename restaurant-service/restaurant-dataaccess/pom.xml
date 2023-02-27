@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>restaurant-service</artifactId>
-        <groupId>net.mosur.ordering</groupId>
+        <groupId>net.mosur.food.ordering.system</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -12,16 +12,16 @@
     <artifactId>restaurant-dataaccess</artifactId>
 
     <dependencies>
-<!--        <dependency>-->
-<!--            <groupId>net.mosur.ordering</groupId>-->
-<!--            <artifactId>outbox</artifactId>-->
-<!--        </dependency>-->
         <dependency>
-            <groupId>net.mosur.ordering</groupId>
+            <groupId>net.mosur.food.ordering.system</groupId>
+            <artifactId>outbox</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.mosur.food.ordering.system</groupId>
             <artifactId>restaurant-application-service</artifactId>
         </dependency>
         <dependency>
-            <groupId>net.mosur.ordering</groupId>
+            <groupId>net.mosur.food.ordering.system</groupId>
             <artifactId>common-dataaccess</artifactId>
         </dependency>
         <dependency>

@@ -3,7 +3,7 @@ server:
 
 logging:
   level:
-    net.mosur.ordering: DEBUG
+    net.mosur.food.ordering.system: DEBUG
 
 payment-service:
   payment-request-topic-name: payment-request
